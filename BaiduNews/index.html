@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="BaiduNews.css">
+    <title>百度新闻</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="cf">
+            <a href="#" class="logo"><span class="iconfont">&#xe612;</span></a>
+            <a href="#" class="user"><span class="iconfont">&#xe769;</span></a>
+            <a href="#" class="add"><span class="iconfont">&#xe7c4;</span></a>
+            <a href="#" class="saerch"><span class="iconfont">&#xe60b;</span></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">精选</a><i></i></li>
+                <li><a href="#">百家</a><i></i></li>
+                <li><a href="#">本地</a><i></i></li>
+                <li><a href="#">图片</a><i></i></li>
+                <li><a href="#">娱乐</a><i></i></li>
+                <li><a href="#">社会</a><i></i></li>
+                <li><a href="#">军事</a><i></i></li>
+                <li><a href="#">女人</a><i></i></li>
+                <li><a href="#">搞笑</a><i></i></li>
+                <li><a href="#">互联网</a><i></i></li>
+                <li><a href="#">更多</a><i></i></li>
+            </ul>
+        </nav>
+        <article class="news-main">
+            <ul class="news-lists">
+              <!--   <li class="news-list">
+                    <div class="newsimg">
+                        <img src="image/1.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>全国政协十二五次会议闭幕</h1>
+                        <p><span class="newstime">2017年3月13日</span><span class="newssrc">搜狐网</span></p>
+                    </div>
+                </li> -->
+            <!--     <li class="news-list">
+                    <div class="newsimg">
+                        <img src="image/2.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>马来西亚卫生部呼吁“金正男家属”前来认领尸体</h1>
+                        <p><span class="newstime">2017年3月13日</span><span class="newssrc">百度新闻</span></p>
+                    </div>
+                </li>
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="image/3.png" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>习总书记漫评：汇聚起科技兴军的强大力量</h1>
+                        <p><span class="newstime">2017年3月13日</span><span class="newssrc">搜狐网</span></p>
+                    </div>
+                </li>
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="image/4.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>共享单车泡沫反思 | 警惕！别让共享单车沦为一场失控的资本竞赛</h1>
+                        <p><span class="newstime">2017年3月13日</span><span class="newssrc">搜狐网</span></p>
+                    </div>
+                </li>
+                  <li class="news-list">
+                    <div class="newsimg">
+                        <img src="image/5.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1> 比尔乔治盛赞马云：中国第一位真正意义上的全球商业领袖</h1>
+                        <p><span class="newstime">2017年3月13日</span><span class="newssrc">搜狐网</span></p>
+                    </div>
+                </li> -->
+            </ul>
+        </article>
+    </div>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="BaiduNews.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var deviceWidth = $('body').width();
+        $('nav li').each(function(index, item) {
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+        }); })
+    </script>
+</body>
+
+</html>

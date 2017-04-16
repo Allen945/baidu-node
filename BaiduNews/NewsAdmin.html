@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <!--  <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+    <title>百度后台管理系统</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">百度新闻后台管理系统</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻编辑</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="newstitle">新闻标题</label>
+                                <input type="text" class="form-control" id="newstitle" placeholder="请输入新闻标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="newstype">新闻类型</label>
+                                <select class="form-control">
+                                    <option>精选</option>
+                                    <option>百家</option>
+                                    <option>本地</option>
+                                    <option>图片</option>
+                                    <option>娱乐</option>
+                                    <option>社会</option>
+                                    <option>军事</option>
+                                    <option>女人</option>
+                                    <option>搞笑</option>
+                                    <option>互联网</option>
+                                    <option>更多</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="newsimg">新闻图片</label>
+                                <input type="text" class="form-control" id="newsimg" placeholder="请输入新闻图片路径">
+                            </div>
+                            <div class="form-group">
+                                <label for="newstime">新闻时间</label>
+                                <input type="date" class="form-control" id="newstime" >
+                            </div>
+                            <div class="form-group">
+                                <label for="newssrc">新闻来源</label>
+                                <input type="text" class="form-control" id="newssrc" placeholder="请输入新闻来源">
+                            </div>
+                            <button class="btn btn-primary" id="btnsubmit">提交新闻</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻列表</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table" id="newstable">
+                            <thead>
+                                <tr>
+                                    <td>id</td>
+                                    <td>新闻标题</td>
+                                    <td>类型</td>
+                                    <td>图片地址</td>
+                                    <td>新闻时间</td>
+                                    <td>新闻来源</td>
+                                    <td>操作</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>测试</td>
+                                    <td>精选</td>
+                                    <td>image/1.png</td>
+                                    <td>2017/3/15</td>
+                                    <td>搜狐财经网</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs">编辑</button>
+                                        <button class="btn btn-danger btn-xs">删除</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="NewsAdmin.js"></script>
+</body>
+
+</html>
